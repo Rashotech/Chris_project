@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/*--------------------------------*/
+.navbar{
+  position: fixed;
+}
+
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 400px;
+}
+.ul{
+  display: inline-block;
+}
+.balance{
+  display: block;
+  margin: 0 auto 0 auto;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-group {
+  width: auto;
+  max-width: 460px;
+  margin: 4rem auto;
+}
+.list-group-item {
+  cursor: pointer;
+  border-radius: .5rem;
+}
+.list-group-item-check:hover + .list-group-item {
+  background-color: var(--bs-light);
+}
