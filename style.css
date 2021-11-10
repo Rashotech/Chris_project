@@ -1,24 +1,33 @@
-body{
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
+* {
+  box-sizing: border-box;
 }
 
 
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fe !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
 /*--------------------------------*/
 .navbar{
   position: fixed;
 }
-
 
 .main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
-  width: 400px;
+  margin-right: 25%;
+  margin-left: 25%;
 }
 .ul{
   display: inline-block;
@@ -44,4 +53,88 @@ body{
 }
 .list-group-item-check:hover + .list-group-item {
   background-color: var(--bs-light);
+}
+
+.m-top {
+  margin-top: 100px;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 50px;
+}
+
+.dashboard a {
+  color: #26a69a !important;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.d-items {
+  background-color: '#DCE2E4';
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 10px;
+}
+
+.d-items:hover {
+  -webkit-transition: .25s;
+  transition: .25s;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  color: #26a69a; 
+  background-color: #dce2e4;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.tabs {
+  color: white;
+  overflow: hidden;
+  background: transparent;
+}
+
+.tabs li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.tab a {
+  color: #4a4a4a;
+}
+
+.active {
+  border-bottom: 2px #4a4a4a solid;
+  background-color: #f6b2b5;
+  padding: 10px;
+  bottom: 0;
+  color: #0094FF !important;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }

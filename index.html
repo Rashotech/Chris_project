@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Trading - AmplifyTrades</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" rel='stylesheet'>
   </head>
   <body>
@@ -13,9 +14,9 @@
       <div class="container-fluid">
       <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><span class="navbar-toggler-icon"></span></button>
         <a class="navbar-brand mb-0 h1" href="#">AMPLIFYTRADES</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
           <a class="nav-link" href="#">en</a>
         </li>
@@ -32,6 +33,7 @@
           <a class="nav-link" href="#">power-button</a>
         </li>
       </ul>
+    </div>
     </nav>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
       <div class="offcanvas-header">
@@ -124,14 +126,16 @@
       </div>
     </div> -->
 
-    <div class="main">
-      <div class="balance">
+    <div class="m-top main">
+      <div class="balance text-center">
         <h1>$0.00</h1>
         <h5>TRADING BALANCE</h5>
       </div>
+      <progress value="0" max="100" style="width: 100%;"></progress>
+      <p class="text-center">SIGNAL STRENGTH</p>
     </div>
 
-    <div class="list-group">
+    <!-- <div class="list-group">
       <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
@@ -195,6 +199,98 @@
           </div>
         </div>
       </a>
+    </div> -->
+
+    <div class="dashboard">
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          attach_money
+        </span>
+        <a href="#">
+          FUND ACCOUNT
+        </a>
+      </div>
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          supervised_user_circle
+          </span>
+        <a href="#">
+          COPY TRADING
+        </a>
+      </div>
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          store
+        </span>
+        <a href="#">
+          MARKETS
+        </a>
+      </div>
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          star_outline
+        </span>
+        <a href="#">
+          WATCHLIST
+        </a>
+      </div>
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          bar_chart
+          </span>
+        <a href="#">
+          TRADE ROOM
+        </a>
+      </div>
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          hourglass_top
+          </span>
+        <a href="#">
+          OPEN TRADES
+        </a>
+      </div>
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          hourglass_full
+          </span>
+        <a href="#">
+          CLOSED TRADES
+        </a>
+      </div>
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          schedule
+          </span>
+        <a href="#">
+          BINARY OPTION
+        </a>
+      </div>
+      <div class="d-items d-flex">
+        <span class="material-icons">
+          shopping_bag
+          </span>
+        <a href="#">
+          BUY CRYPTO
+        </a>
+      </div>
+    </div>
+
+    <div class="fixed-footer d-flex justify-content-center">
+      <ul class="tabs">
+        <li class="tab">
+          <a href="#trading" class="active d-flex">
+            <span class="material-icons">assessment</span>
+            <span class="px-1">Trading</span></a>
+        </li>
+        <li class="tab">
+          <a href="#minin" class="d-flex">
+            <span class="material-icons">copyright</span>
+            <span class="px-1">Mining</span></a>
+        </li>
+        <li class="indicator" style="left: 415px; right: 539px;">
+        </li>
+      </ul>
     </div>
 <script src="dist/js/bootstrap.bundle.min.js"></script>
   </body>
